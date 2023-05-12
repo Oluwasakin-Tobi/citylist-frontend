@@ -1,0 +1,130 @@
+.App {
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-image: linear-gradient(30deg, #C1C1C1, #6f93c6 48%, #C1C1C1);
+}
+
+.auth-form-container, .login-form, .register-form, .edit-form {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 600px) {
+  .auth-form-container {
+    padding: 5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0.5rem;
+  }
+}
+
+label {
+  text-align: left;
+  padding: 0.25rem 0;
+}
+
+input {
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 4px;
+}
+
+button {
+  text-align: center;
+  padding: 1rem 1rem;
+  border: none;
+  border-radius: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: #4c84d3;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  min-width: 12em;
+  margin-top: 10px;
+}
+button:hover,
+button:focus {
+  color: #fff;
+  background-color: #6f93c6;
+  border: 1px solid #fff;
+  outline: none;
+}
+
+.link-btn {
+  background: none;
+  color: white;
+  text-decoration: underline;
+}
+
+.page-link {
+  color: #4c84d3;
+}
+
+.images{
+  max-width: 300px;
+  min-width: 300px;
+  max-height: 200px;
+  min-height: 200px;
+  border-radius: 30px;
+}
+
+.btn-primary{
+  color: #fff;
+  background-color: #6f93c6;
+  border: 1px solid #fff;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  color: #6f93c6;
+  background-color: #fff;
+  border: 1px solid #6f93c6;
+}
+
+
+.btn-outline-primary{ 
+  color: #6f93c6 !important;
+  background-color: #fff !important;
+  border: 1px solid #6f93c6 !important;
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  color: #fff !important;
+  background-color: #6f93c6 !important;
+  border: 1px solid #fff !important;
+  outline: none;
+}
+
+.divider{
+  border: 0px solid #C1C1C1 ;
+  margin-top: 10px !important;
+  margin-bottom: 30px;
+}
+
+.btn-area{
+  display: flex;
+}
+
+@media screen and (max-width: 600px) {
+  .images{
+    max-width: 150px;
+    min-width: 150px;
+    max-height: 100px;
+    min-height: 100px;
+    border-radius: 10px;
+  }
+
+  .btn-area{
+    display: block;
+  }
+
+}
